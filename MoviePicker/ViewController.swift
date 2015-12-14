@@ -7,19 +7,50 @@
 //
 
 import UIKit
+import Parse
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UIViewController
+{
+    @IBOutlet weak var randomMovieLabel: UILabel!
+    
+    @IBAction func showMoviesButton(sender: AnyObject)
+    {
+        //don't delete
+    }
+    
+    @IBAction func pickAMovieButton(sender: AnyObject)
+    {
+        let randomNum = Int(arc4random_uniform(UInt32(MovieCore.listofMovies.count)))
+        self.randomMovieLabel.text = "\(MovieCore.listofMovies[randomNum].objectForKey("movieName") as! String!)"
     }
 
-    override func didReceiveMemoryWarning() {
+    override func viewWillAppear(animated: Bool)
+    {
+        let query = PFQuery(className:"MovieList")
+        query.whereKey("watched", equalTo: false)
+        query.findObjectsInBackgroundWithBlock { (objects : [PFObject]?, error:NSError?) -> Void in
+            if(objects != nil)
+            {
+                MovieCore.listofMovies = objects!
+            }
+            else
+            {
+                print("None Found")
+            }
+        }
+    }
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        self.randomMovieLabel.text = ""
+    }
+    
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
 
 }
-
