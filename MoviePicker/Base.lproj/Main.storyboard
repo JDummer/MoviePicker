@@ -30,7 +30,7 @@
                                 <connections>
                                     <action selector="showMoviesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMG-fk-jTs"/>
                                     <action selector="showMoviesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4JC-Dv-ebI"/>
-                                    <segue destination="7X4-xu-7zI" kind="show" id="zNY-df-MMA"/>
+                                    <segue destination="UwS-RY-yIO" kind="show" id="mdA-lS-lLs"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePU-ep-xSc">
@@ -42,6 +42,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAT-bA-EJ7">
                                 <rect key="frame" x="82" y="180" width="156" height="30"/>
                                 <state key="normal" title="Show Watched Movies"/>
+                                <connections>
+                                    <segue destination="7X4-xu-7zI" kind="show" id="j24-D6-bSH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random Movie:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtM-cQ-H6p">
                                 <rect key="frame" x="20" y="263" width="280" height="21"/>
@@ -193,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCF-gv-EvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="213"/>
+            <point key="canvasLocation" x="977" y="213"/>
         </scene>
         <!--AddA MovieVC-->
         <scene sceneID="384-2j-tdt">
