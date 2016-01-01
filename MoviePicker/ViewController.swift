@@ -17,6 +17,10 @@ class ViewController: UIViewController
     {
         //don't delete
     }
+    @IBAction func showMoviesButtonPressed(sender: AnyObject)
+    {
+        
+    }
     
     @IBAction func pickAMovieButton(sender: AnyObject)
     {
@@ -28,10 +32,25 @@ class ViewController: UIViewController
     {
         let query = PFQuery(className:"MovieList")
         query.whereKey("watched", equalTo: false)
+        query.orderByAscending("movieName")
         query.findObjectsInBackgroundWithBlock { (objects : [PFObject]?, error:NSError?) -> Void in
             if(objects != nil)
             {
                 MovieCore.listofMovies = objects!
+            }
+            else
+            {
+                print("None Found")
+            }
+        }
+        
+        let querytwo = PFQuery(className:"MovieList")
+        querytwo.whereKey("watched", equalTo: true)
+        querytwo.orderByAscending("movieName")
+        querytwo.findObjectsInBackgroundWithBlock { (objects : [PFObject]?, error:NSError?) -> Void in
+            if(objects != nil)
+            {
+                MovieCore.watchedMovies = objects!
             }
             else
             {

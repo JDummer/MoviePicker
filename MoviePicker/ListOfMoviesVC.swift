@@ -57,7 +57,6 @@ class ListOfMoviesViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad()
     {
-        print(MovieCore.listofMovies)
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }

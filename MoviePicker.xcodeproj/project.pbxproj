@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB145D4F1BF5221500D3BDE3 /* ListOfMoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB145D4E1BF5221500D3BDE3 /* ListOfMoviesVC.swift */; };
+		AB7FF8F11C34CF3E00B174A4 /* WatchedMoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7FF8F01C34CF3E00B174A4 /* WatchedMoviesVC.swift */; };
 		AB92F3B41C098B2C00E2A2FD /* MovieCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92F3B31C098B2C00E2A2FD /* MovieCore.swift */; };
 		AB92F3B61C0A607A00E2A2FD /* AddAMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92F3B51C0A607A00E2A2FD /* AddAMovieVC.swift */; };
 		ABB368D41BED4981003570F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB368D31BED4981003570F7 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		AB145D4E1BF5221500D3BDE3 /* ListOfMoviesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfMoviesVC.swift; sourceTree = "<group>"; };
+		AB7FF8F01C34CF3E00B174A4 /* WatchedMoviesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchedMoviesVC.swift; sourceTree = "<group>"; };
 		AB92F3B31C098B2C00E2A2FD /* MovieCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCore.swift; sourceTree = "<group>"; };
 		AB92F3B51C0A607A00E2A2FD /* AddAMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAMovieVC.swift; sourceTree = "<group>"; };
 		ABB368D01BED4981003570F7 /* MoviePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				ABB368D71BED4981003570F7 /* Main.storyboard */,
 				ABB368D51BED4981003570F7 /* ViewController.swift */,
 				AB145D4E1BF5221500D3BDE3 /* ListOfMoviesVC.swift */,
+				AB7FF8F01C34CF3E00B174A4 /* WatchedMoviesVC.swift */,
 				AB92F3B51C0A607A00E2A2FD /* AddAMovieVC.swift */,
 				ABB368DA1BED4981003570F7 /* Assets.xcassets */,
 				ABB368DC1BED4981003570F7 /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7FF8F11C34CF3E00B174A4 /* WatchedMoviesVC.swift in Sources */,
 				AB145D4F1BF5221500D3BDE3 /* ListOfMoviesVC.swift in Sources */,
 				ABB368D61BED4981003570F7 /* ViewController.swift in Sources */,
 				ABB368D41BED4981003570F7 /* AppDelegate.swift in Sources */,

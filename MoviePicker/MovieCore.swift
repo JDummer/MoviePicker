@@ -12,4 +12,5 @@ import Parse
 class MovieCore: NSObject
 {
     static var listofMovies = [PFObject]()
+    static var watchedMovies = [PFObject]()
 }
